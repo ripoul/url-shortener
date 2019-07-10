@@ -1,0 +1,53 @@
+{
+  "name": "gatsby-starter",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "lint": "eslint src",
+    "release": "release-it"
+  },
+  "dependencies": {
+    "gatsby": "^2.9.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-preset-gatsby": "^0.1.4",
+    "coveralls": "^3.0.2",
+    "dotenv": "^6.1.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.0.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "jest-axe": "^3.1.0",
+    "prettier": "^1.18.2",
+    "release-it": "^12.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ripoul/gatsby-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/ripoul/gatsby-starter/issues"
+  }
+}
