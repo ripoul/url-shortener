@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter",
+  "name": "url-shortener",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A secure url shortener allowing you to easily share your links",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
@@ -45,9 +45,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ripoul/gatsby-starter"
+    "url": "https://github.com/ripoul/url-shortener"
   },
   "bugs": {
-    "url": "https://github.com/ripoul/gatsby-starter/issues"
+    "url": "https://github.com/ripoul/url-shortener/issues"
   }
 }
