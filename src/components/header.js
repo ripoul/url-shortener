@@ -1,13 +1,15 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
-import React, { useState } from "react";
+import { Link } from "gatsby"
+import PropTypes from "prop-types"
+import React, { useState } from "react"
 
-function Header({ siteTitle }) {
-  const [isExpanded, toggleExpansion] = useState(false);
+function Header ({ siteTitle }) {
+  const [isExpanded, toggleExpansion] = useState(false)
 
   return (
     <nav className="bg-teal-600 p-1">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
+      <div 
+        className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8"
+      >
         <Link to="/" className="flex items-center no-underline text-white">
           
           <span className="font-bold text-xl tracking-tight">{siteTitle}</span>
@@ -38,15 +40,15 @@ function Header({ siteTitle }) {
         </div>
       </div>
     </nav>
-  );
+  )
 }
 
 Header.propTypes = {
   siteTitle: PropTypes.string
-};
+}
 
 Header.defaultProps = {
   siteTitle: ``
-};
+}
 
-export default Header;
+export default Header

@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { StaticQuery, graphql } from "gatsby";
+import React from "react"
+import PropTypes from "prop-types"
+import { StaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
-import Header from "./header";
+import Header from "./header"
 
-function Layout({ children }) {
+function Layout ({ children }) {
   return (
     <StaticQuery
       query={graphql`
@@ -62,11 +62,11 @@ function Layout({ children }) {
         </div>
       )}
     />
-  );
+  )
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired
-};
+}
 
-export default Layout;
+export default Layout
