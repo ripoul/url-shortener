@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy } from '@fortawesome/free-solid-svg-icons'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class MainForm extends React.Component {
 
@@ -46,7 +48,7 @@ class MainForm extends React.Component {
             this.setState({providersList: response});
         })
         .catch(function(error) {
-            console.log("Error during API call...");
+            toast.error("Error during API call...");
         });
 
     }
@@ -98,7 +100,7 @@ class MainForm extends React.Component {
     shortenUrl() {
 
         if (!this.isFormValid()) {
-            alert("FORM INVALID");
+            toast.warn("Your form is invalid!");
             return;
         }
 
@@ -115,23 +117,29 @@ class MainForm extends React.Component {
         })
         .then(response => response.json())
         .then(response => {
-            this.setState({
-                resultVisibility: "",
-                shortenedUrl: response.url
-            });
+
+            if (response.url) {
+                this.setState({
+                    resultVisibility: "",
+                    shortenedUrl: response.url
+                });
+            }
+            else {
+                toast.error("Error during API call...");
+            }
         })
         .catch(function(error) {
-            console.log("Error during API call...");
+            toast.error("Error during API call...");
         });
 
     }
 
     copyUrl() {
-        var copyText = document.querySelector("#shortened-url");
-        copyText.select();
-        document.execCommand("copy");
+        var copyText = document.querySelector("#shortened-url")
+        copyText.select()
+        document.execCommand("copy")
 
-        alert('Copied');
+        toast.success("Copied !")
     }
 
     render() {
@@ -219,6 +227,7 @@ class MainForm extends React.Component {
                                 Go !
                         </button>
                     </form>
+                    <ToastContainer />
                 </section>
             );
         }
