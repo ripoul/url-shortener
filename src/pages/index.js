@@ -1,8 +1,28 @@
-import React from 'react'
+import React from "react"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import MainForm from "../components/mainForm"
 
 function IndexPage () {
+
   return (
-    <div>Hello world!</div>
+    <Layout>
+      <SEO
+        title="Home"
+        keywords = {
+          [
+            `gatsby`, 
+            `tailwind`, 
+            `react`, 
+            `tailwindcss`, 
+            `url`, 
+            `shortener`
+          ]
+        }
+      />
+      <MainForm/>
+    </Layout>
   )
 }
 

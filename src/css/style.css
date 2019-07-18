@@ -1,0 +1,123 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/base.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/base";
+ */
+@tailwind base;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+ /**
+ html, body {
+    background: #1b2832;
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  */
+  @-webkit-keyframes loader-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes loader-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  .loader {
+    position: absolute;
+    margin: -18px 0 0 -18px;
+    border: 3.6px solid #F56358;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 36px;
+    height: 36px;
+    left: 50%;
+    top: 50%;
+    animation: loader-spin 2s linear infinite reverse;
+    -webkit-filter: url(#goo);
+            filter: url(#goo);
+    box-shadow: 0 0 0 1px #F56358 inset;
+  }
+  .loader:before {
+    content: "";
+    position: absolute;
+    -webkit-animation: loader-spin 2s cubic-bezier(0.59, 0.25, 0.4, 0.69) infinite;
+            animation: loader-spin 2s cubic-bezier(0.59, 0.25, 0.4, 0.69) infinite;
+    background: #F56358;
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    border-radius: 50%;
+    width: 150%;
+    height: 150%;
+    top: 50%;
+    left: -12.5%;
+  }
