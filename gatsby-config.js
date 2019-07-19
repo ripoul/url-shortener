@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Url Shortener`,
-    description: `Gatsby starter styled with Tailwind`,
+    description: `Shorten your url with many providers`,
     author: `@Ripoul & @VictorFAVREAU`
   },
   plugins: [

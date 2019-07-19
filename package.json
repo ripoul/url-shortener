@@ -1,8 +1,8 @@
 {
   "name": "@oddstronaut/gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
-  "version": "3.0.50",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "description": "Shorten your url with many providers",
+  "version": "1.0.0",
+  "author": "@Ripoul & @VictorFAVREAU",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
@@ -60,10 +60,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oddstronaut/gatsby-starter-tailwind"
+    "url": "https://github.com/ripoul/url-shortener"
   },
   "bugs": {
-    "url": "https://github.com/oddstronaut/gatsby-starter-tailwind/issues"
+    "url": "https://github.com/ripoul/url-shortener/issues"
   },
   "publishConfig": {
     "access": "public"
