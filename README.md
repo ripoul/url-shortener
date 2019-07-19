@@ -10,6 +10,8 @@
 
 ### 🏠 [Homepage](https://github.com/ripoul/url-shortener)
 
+I've made this web interface for my url shortener api [here](https://github.com/ripoul/url-shortener-api).
+
 ## Install
 
 ```sh
