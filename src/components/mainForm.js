@@ -11,16 +11,12 @@ class MainForm extends React.Component {
     super(props)
 
     //API_URL: "http://url-shortener.api.ripoul.fr/api/",
-    //HTTP_VERB: "http://",
     const API_URL = "https://url-shortener-ripoul.herokuapp.com/api",
-      HTTP_VERB = "https://",
       PROVIDERS_URL = API_URL + "/providers"
 
     this.state = {
       //API_URL: "http://url-shortener.api.ripoul.fr/api/",
-      //HTTP_VERB: "http://",
       API_URL: API_URL,
-      HTTP_VERB: HTTP_VERB,
       PROVIDERS_URL: PROVIDERS_URL,
       resultVisibility: "hidden",
       shortenedUrl: "",
@@ -112,10 +108,6 @@ class MainForm extends React.Component {
     }
 
     let providerUrl = this.state.providerUrl
-
-    if (!providerUrl.startsWith(this.state.HTTP_VERB) ) {
-      providerUrl = this.state.HTTP_VERB + providerUrl
-    }
 
     providerUrl = providerUrl + "?url=" + this.state.url
 
