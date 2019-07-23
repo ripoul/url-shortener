@@ -1,5 +1,6 @@
 <h1 align="center">Welcome to url-shortener 👋</h1>
 
+![Node Version](https://img.shields.io/badge/node-8.16%20%7C%2010.16%20%7C%2012.6-blue.svg)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/ripoul/url-shortener)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/ripoul/url-shortener.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ripoul/url-shortener/blob/master/LICENSE)
