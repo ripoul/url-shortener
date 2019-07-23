@@ -40,6 +40,8 @@ yarn test
 
 ## 🤝 Contributing
 
+![GitHub issues](https://img.shields.io/github/issues/ripoul/url-shortener.svg)
+
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/ripoul/url-shortener/issues).
 
 ## Show your support
