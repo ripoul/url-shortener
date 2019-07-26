@@ -2,7 +2,6 @@
 
 ![Node Version](https://img.shields.io/badge/node-8.16%20%7C%2010.16%20%7C%2012.6-blue.svg)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/ripoul/url-shortener)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/ripoul/url-shortener.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ripoul/url-shortener/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/ripoul/url-shortener.svg?branch=master)](https://travis-ci.org/ripoul/url-shortener)
 [![CodeFactor](https://www.codefactor.io/repository/github/ripoul/url-shortener/badge)](https://www.codefactor.io/repository/github/ripoul/url-shortener)
