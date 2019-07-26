@@ -5,6 +5,7 @@
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/ripoul/url-shortener.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ripoul/url-shortener/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/ripoul/url-shortener.svg?branch=master)](https://travis-ci.org/ripoul/url-shortener)
+[![CodeFactor](https://www.codefactor.io/repository/github/ripoul/url-shortener/badge)](https://www.codefactor.io/repository/github/ripoul/url-shortener)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/db49f1ba-594f-4b19-9024-7584a33195fd/deploy-status)](https://app.netlify.com/sites/vigilant-ptolemy-8fe211/deploys)
 
 > A secure url shortener allowing you to easily share your links
