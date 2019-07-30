@@ -11,7 +11,6 @@ export default function HTML (props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta name="google-site-verification" content="QSULd4h4HBirW-Zyyd2vF5fdM9cpIa4uZukME69hTGc" />
         <meta name="description" content="A tool to shorten long urls"/>
         {props.headComponents}
       </head>
