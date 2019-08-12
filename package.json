@@ -7,7 +7,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "gatsby": "2.13.52",
+    "gatsby": "2.13.58",
     "gatsby-plugin-manifest": "2.2.5",
     "gatsby-plugin-offline": "2.2.5",
     "gatsby-plugin-postcss": "2.1.2",
