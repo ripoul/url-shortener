@@ -8,7 +8,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "gatsby": "2.15.2",
-    "gatsby-plugin-manifest": "2.2.9",
+    "gatsby-plugin-manifest": "2.2.13",
     "gatsby-plugin-offline": "2.2.9",
     "gatsby-plugin-postcss": "2.1.6",
     "gatsby-plugin-purgecss": "4.0.0",
