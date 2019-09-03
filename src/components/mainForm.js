@@ -10,8 +10,7 @@ class MainForm extends React.Component {
 
     super(props)
 
-    //API_URL: "http://url-shortener.api.ripoul.fr/api/",
-    const API_URL = "https://url-shortener-ripoul.herokuapp.com/api",
+    const API_URL = "https://url-shortener.api.ripoul.fr/api",
       PROVIDERS_URL = API_URL + "/providers"
 
     this.state = {
