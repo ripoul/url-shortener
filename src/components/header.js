@@ -4,14 +4,13 @@ import PropTypes from "prop-types"
 
 const Header = ({ siteTitle, menuLinks }) => (
   <header
+    className={"bg-teal-600"}
     style={{
-      background: "rebeccapurple",
       marginBottom: "1.45rem",
     }}
   >
     <div
       style={{
-        background: "rebeccapurple",
         marginBottom: "1.45rem",
       }}
     >
@@ -27,13 +26,14 @@ const Header = ({ siteTitle, menuLinks }) => (
       >
         <h1 style={{ margin: 0, flex: 1 }}>
           <Link
+            className="flex items-center no-underline text-white"
             to="/"
             style={{
               color: "white",
               textDecoration: "none",
             }}
           >
-            {siteTitle}
+            <span className="font-bold text-xl tracking-tight">{siteTitle}</span>
           </Link>
         </h1>
         <div>
