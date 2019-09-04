@@ -5,15 +5,8 @@ import PropTypes from "prop-types"
 const Header = ({ siteTitle, menuLinks }) => (
   <header
     className={"bg-teal-600"}
-    style={{
-      marginBottom: "1.45rem",
-    }}
   >
-    <div
-      style={{
-        marginBottom: "1.45rem",
-      }}
-    >
+    <div>
       <div
         style={{
           margin: "0 auto",
