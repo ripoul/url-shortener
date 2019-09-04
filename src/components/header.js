@@ -14,6 +14,10 @@ function Header ({ siteTitle }) {
           
           <span className="font-bold text-xl tracking-tight">{siteTitle}</span>
         </Link>
+        <Link to="/qrcode" className="flex items-center no-underline text-white">
+          
+          <span className="font-bold text-xl tracking-tight">Qrcode shortener</span>
+        </Link>
 
         <button
           className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-white"
