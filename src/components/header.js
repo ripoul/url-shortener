@@ -1,58 +1,73 @@
+import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState } from "react"
 
-function Header ({ siteTitle }) {
-  const [isExpanded, toggleExpansion] = useState(false)
-
-  return (
-    <nav className="bg-teal-600 p-1">
-      <div 
-        className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8"
+const Header = ({ siteTitle, menuLinks }) => (
+  <header
+    style={{
+      background: "rebeccapurple",
+      marginBottom: "1.45rem",
+    }}
+  >
+    <div
+      style={{
+        background: "rebeccapurple",
+        marginBottom: "1.45rem",
+      }}
+    >
+      <div
+        style={{
+          margin: "0 auto",
+          maxWidth: 960,
+          padding: "1.45rem 1.0875rem",
+          display: "flex",
+          justifyItems: "space-between",
+          alignItems: "center",
+        }}
       >
-        <Link to="/" className="flex items-center no-underline text-white">
-          
-          <span className="font-bold text-xl tracking-tight">{siteTitle}</span>
-        </Link>
-        <Link to="/qrcode" className="flex items-center no-underline text-white">
-          
-          <span className="font-bold text-xl tracking-tight">Qrcode shortener</span>
-        </Link>
-
-        <button
-          className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-white"
-          onClick={() => toggleExpansion(!isExpanded)}
-        >
-          <svg
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+        <h1 style={{ margin: 0, flex: 1 }}>
+          <Link
+            to="/"
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
           >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-
-        <div
-          className={`${
-            isExpanded ? `block` : `hidden`
-          } md:block md:flex md:items-center w-full md:w-auto`}
-        >
-          <div className="text-sm">
-            
-          </div>
+            {siteTitle}
+          </Link>
+        </h1>
+        <div>
+          <nav>
+            <ul style={{ display: "flex", flex: 1 }}>
+              {menuLinks.map(link => (
+                <li
+                  key={link.name}
+                  style={{
+                    listStyleType: `none`,
+                    padding: `1rem`,
+                  }}
+                >
+                  <Link style={{ color: `white` }} to={link.link}>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </div>
-    </nav>
-  )
-}
+    </div>
+  </header>
+)
 
 Header.propTypes = {
-  siteTitle: PropTypes.string
+  siteTitle: PropTypes.string,
+  menuLinks: PropTypes.array
 }
 
 Header.defaultProps = {
-  siteTitle: ``
+  siteTitle: ``,
+  menuLinks:[]
 }
 
 export default Header
