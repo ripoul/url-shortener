@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { Location } from '@reach/router'
 
 import Header from "./header"
 
@@ -24,10 +25,15 @@ function Layout ({ children }) {
       `}
       render={data => (
         <div className="flex flex-col font-sans min-h-screen text-gray-900">
-          <Header 
-            menuLinks={data.site.siteMetadata.menuLinks} 
-            siteTitle={data.site.siteMetadata.title} 
-          />
+          <Location>
+            {({ location }) => {
+              return (<Header 
+                menuLinks={data.site.siteMetadata.menuLinks} 
+                siteTitle={data.site.siteMetadata.title} 
+                location={location.pathname}
+              />)
+            }}
+          </Location>
 
           <main className="flex flex-col flex-1 md:justify-center max-w-4xl mx-auto px-4 py-8 md:p-6 w-full">
             {children}
