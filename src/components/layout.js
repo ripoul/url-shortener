@@ -29,12 +29,12 @@ function Layout ({ children }) {
             siteTitle={data.site.siteMetadata.title} 
           />
 
-          <main className="flex flex-col flex-1 md:justify-center max-w-4xl mx-auto px-4 py-8 md:p-8 w-full">
+          <main className="flex flex-col flex-1 md:justify-center max-w-4xl mx-auto px-4 py-8 md:p-6 w-full">
             {children}
           </main>
 
           <footer className="bg-red-300">
-            <nav className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
+            <nav className="flex justify-between max-w-4xl mx-auto p-4 md:p-6 text-sm">
               <p className="text-gray-800">
                 Created with {" "}
                 <FontAwesomeIcon icon={faHeart}/>
