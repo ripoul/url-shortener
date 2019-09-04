@@ -1,6 +1,16 @@
 module.exports = {
   siteMetadata: {
     title: `Url Shortener`,
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: 'qrcode shortener',
+        link: '/qrcode'
+      }
+    ],
     description: `Shorten your url with many providers`,
     author: `@Ripoul & @VictorFAVREAU`
   },
