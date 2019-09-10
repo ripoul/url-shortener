@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy } from '@fortawesome/free-solid-svg-icons'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import  Select from 'react-dropdown-select'
 
 class MainForm extends React.Component {
 
@@ -66,9 +67,12 @@ class MainForm extends React.Component {
     )
   }
 
-  providerChange (event) {
+  providerChange (item) {
+    if(!item) {
+      return
+    }
     this.setState({
-      providerUrl: event.target.value
+      providerUrl: item.url
     })
   }
 
@@ -107,9 +111,7 @@ class MainForm extends React.Component {
     }
 
     let providerUrl = this.state.providerUrl
-
     providerUrl = providerUrl + "?url=" + this.state.url
-
     fetch(providerUrl, {
       method: 'GET'
     })
@@ -144,8 +146,7 @@ class MainForm extends React.Component {
 
     if (this.state.providersList) {
 
-      let providersListPrepared = 
-        this.state.providersList.map(this.renderProvider)
+      const labelField = "name", valueField = "url"
 
       return (
         <section className="text-center">
@@ -160,17 +161,15 @@ class MainForm extends React.Component {
                             provider
             </label>
             <div className="relative">
-              <select 
+              <Select
+                options={this.state.providersList}
+                onChange={items => this.providerChange(items[0])}
+                labelField={labelField}
+                valueField={valueField}
+                searchBy={labelField}
+                noDataLabel="No match"
                 className="appearance-none block bg-gray-200 mb-6 px-3 py-2 rounded-md text-gray-700 w-full uppercase"
-                id="provider"
-                onChange={this.providerChange}
-              >
-                <option></option>
-                { providersListPrepared }
-              </select>
-              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-              </div>
+              />
             </div>
 
             <label
