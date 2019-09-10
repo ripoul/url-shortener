@@ -69,7 +69,7 @@ class MainForm extends React.Component {
 
   providerChange (item) {
     if(!item) {
-      return;
+      return
     }
     this.setState({
       providerUrl: item.url
