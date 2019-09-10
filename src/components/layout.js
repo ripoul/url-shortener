@@ -8,39 +8,13 @@ import {
   FacebookShareButton,
   LinkedinShareButton,
   TwitterShareButton,
-  TelegramShareButton,
   WhatsappShareButton,
-  PinterestShareButton,
-  VKShareButton,
-  OKShareButton,
-  RedditShareButton,
-  TumblrShareButton,
-  LivejournalShareButton,
-  MailruShareButton,
-  ViberShareButton,
-  WorkplaceShareButton,
-  LineShareButton,
-  PocketShareButton,
-  InstapaperShareButton,
   EmailShareButton,
   FacebookIcon,
   TwitterIcon,
-  TelegramIcon,
   WhatsappIcon,
   LinkedinIcon,
-  PinterestIcon,
-  VKIcon,
-  OKIcon,
-  RedditIcon,
-  TumblrIcon,
-  LivejournalIcon,
-  MailruIcon,
-  ViberIcon,
-  WorkplaceIcon,
-  LineIcon,
-  PocketIcon,
-  InstapaperIcon,
-  EmailIcon,
+  EmailIcon
 } from 'react-share'
 import Header from "./header"
 
@@ -100,27 +74,27 @@ function Layout ({ children }) {
                 </a>
               </p>
               <p className="inline-flex">
-                <FacebookShareButton url="https://url-shortener.ripoul.fr">
+                <FacebookShareButton url="https://url-shortener.ripoul.fr" className="mx-1">
                   <FacebookIcon
                     size={32}
                     round={true} />
                 </FacebookShareButton>
-                <TwitterShareButton url="https://url-shortener.ripoul.fr">
+                <TwitterShareButton url="https://url-shortener.ripoul.fr" className="mx-1">
                   <TwitterIcon
                     size={32}
                     round={true} />
                 </TwitterShareButton>
-                <LinkedinShareButton url="https://url-shortener.ripoul.fr">
+                <LinkedinShareButton url="https://url-shortener.ripoul.fr" className="mx-1">
                   <LinkedinIcon
                     size={32}
                     round={true} />
                 </LinkedinShareButton>
-                <WhatsappShareButton url="https://url-shortener.ripoul.fr">
+                <WhatsappShareButton url="https://url-shortener.ripoul.fr" className="mx-1">
                   <WhatsappIcon
                     size={32}
                     round={true} />
                 </WhatsappShareButton>
-                <EmailShareButton url="https://url-shortener.ripoul.fr">
+                <EmailShareButton url="https://url-shortener.ripoul.fr" className="mx-1">
                   <EmailIcon
                     size={32}
                     round={true} />
