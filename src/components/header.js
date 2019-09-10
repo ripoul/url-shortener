@@ -39,14 +39,24 @@ const Header = ({ siteTitle, menuLinks, location }) => (
                     padding: `1rem`,
                   }}
                 >
-                  <Link 
-                    style={{ color: link.link==location ? "white" : "black" }} 
-                    to={link.link} 
-                    className={ link.link==location ? 
-                      "text-center block border border-white rounded py-2 px-4 hover:bg-blue-700 text-white" : 
-                      "text-center block border border-blue-500 rounded bg-white py-2 px-4 hover:bg-blue-700 hover:text-white" }>
-                    {link.name}
-                  </Link>
+                  {
+                    !link.external ?
+                      <Link
+                        style={{ color: link.link == location ? "white" : "black" }}
+                        to={link.link}
+                        className={link.link == location ?
+                          "text-center block border border-white rounded py-2 px-4 hover:bg-blue-700 text-white" :
+                          "text-center block border border-blue-500 rounded bg-white py-2 px-4 hover:bg-blue-700 hover:text-white"}>
+                        {link.name}
+                      </Link> : 
+                      <a 
+                        rel="noopener noreferrer" 
+                        target="_blank" 
+                        href={link.link}
+                        className="text-center block border border-blue-500 rounded bg-white py-2 px-4 hover:bg-blue-700 hover:text-white"
+                      >{link.name}</a>
+                  }
+
                 </li>
               ))}
             </ul>
@@ -66,7 +76,7 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
   menuLinks: [],
-  location:"/"
+  location: ""
 }
 
 export default Header

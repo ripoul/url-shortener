@@ -4,7 +4,44 @@ import { StaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { Location } from '@reach/router'
-
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+  PinterestShareButton,
+  VKShareButton,
+  OKShareButton,
+  RedditShareButton,
+  TumblrShareButton,
+  LivejournalShareButton,
+  MailruShareButton,
+  ViberShareButton,
+  WorkplaceShareButton,
+  LineShareButton,
+  PocketShareButton,
+  InstapaperShareButton,
+  EmailShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  TelegramIcon,
+  WhatsappIcon,
+  LinkedinIcon,
+  PinterestIcon,
+  VKIcon,
+  OKIcon,
+  RedditIcon,
+  TumblrIcon,
+  LivejournalIcon,
+  MailruIcon,
+  ViberIcon,
+  WorkplaceIcon,
+  LineIcon,
+  PocketIcon,
+  InstapaperIcon,
+  EmailIcon,
+} from 'react-share'
 import Header from "./header"
 
 function Layout ({ children }) {
@@ -18,6 +55,7 @@ function Layout ({ children }) {
               menuLinks {
                 name
                 link
+                external
               }
             }
           }
@@ -61,14 +99,32 @@ function Layout ({ children }) {
                   Victor FAVREAU
                 </a>
               </p>
-
-              <p>
-                <a
-                  href="https://github.com/ripoul/url-shortener"
-                  className="font-bold no-underline text-gray-800"
-                >
-                  GitHub
-                </a>
+              <p className="inline-flex">
+                <FacebookShareButton url="https://url-shortener.ripoul.fr">
+                  <FacebookIcon
+                    size={32}
+                    round={true} />
+                </FacebookShareButton>
+                <TwitterShareButton url="https://url-shortener.ripoul.fr">
+                  <TwitterIcon
+                    size={32}
+                    round={true} />
+                </TwitterShareButton>
+                <LinkedinShareButton url="https://url-shortener.ripoul.fr">
+                  <LinkedinIcon
+                    size={32}
+                    round={true} />
+                </LinkedinShareButton>
+                <WhatsappShareButton url="https://url-shortener.ripoul.fr">
+                  <WhatsappIcon
+                    size={32}
+                    round={true} />
+                </WhatsappShareButton>
+                <EmailShareButton url="https://url-shortener.ripoul.fr">
+                  <EmailIcon
+                    size={32}
+                    round={true} />
+                </EmailShareButton>
               </p>
             </nav>
           </footer>

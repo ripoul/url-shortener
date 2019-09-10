@@ -4,11 +4,18 @@ module.exports = {
     menuLinks: [
       {
         name: 'home',
-        link: '/'
+        link: '/',
+        external: false
       },
       {
         name: 'qrcode shortener',
-        link: '/qrcode'
+        link: '/qrcode',
+        external: false
+      },
+      {
+        name: 'contribute',
+        link: 'https://github.com/ripoul/url-shortener',
+        external: true
       }
     ],
     description: `Shorten your url with many providers`,
