@@ -166,6 +166,7 @@ class MainForm extends React.Component {
                 onChange={items => this.providerChange(items[0])}
                 labelField={labelField}
                 valueField={valueField}
+                searchBy={labelField}
                 noDataLabel="No match"
                 className="appearance-none block bg-gray-200 mb-6 px-3 py-2 rounded-md text-gray-700 w-full uppercase"
               />
