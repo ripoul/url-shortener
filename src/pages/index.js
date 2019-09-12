@@ -12,12 +12,12 @@ function IndexPage () {
         title="Home"
         keywords = {
           [
-            `gatsby`, 
-            `tailwind`, 
-            `react`, 
-            `tailwindcss`, 
             `url`, 
-            `shortener`
+            `shortener`,
+            `url-shortener`,
+            `shorten`,
+            `provider`,
+            `ripoul`
           ]
         }
       />

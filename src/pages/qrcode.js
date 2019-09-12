@@ -12,12 +12,12 @@ function Qrcode () {
         title="Qrcode shortener"
         keywords = {
           [
-            `gatsby`, 
-            `tailwind`, 
-            `react`, 
-            `tailwindcss`, 
             `url`, 
-            `shortener`
+            `shortener`,
+            `url-shortener`,
+            `shorten`,
+            `provider`,
+            `ripoul`
           ]
         }
       />
