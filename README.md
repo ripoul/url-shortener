@@ -15,19 +15,19 @@
 You can find the live domo [here](https://url-shortener.ripoul.fr).
 I've made this web interface for my url shortener api [here](https://github.com/ripoul/url-shortener-api).
 
-## Install
+## :hammer: Install
 
 ```sh
 yarn install
 ```
 
-## Usage
+## :wrench: Usage
 
 ```sh
 yarn start
 ```
 
-## Run tests
+## :white_check_mark: Run tests
 
 ```sh
 yarn test
