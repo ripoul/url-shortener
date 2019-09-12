@@ -35,11 +35,11 @@ function SEO ({ description, lang, meta, keywords, title }) {
                 content: `website`
               },
               {
-                name: `og:url`,
+                property: `og:url`,
                 content: data.site.siteMetadata.siteUrl
               },
               {
-                name: `og:image`,
+                property: `og:image`,
                 content: data.site.siteMetadata.icon
               },
               {
