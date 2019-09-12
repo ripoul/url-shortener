@@ -21,7 +21,7 @@ module.exports = {
     description: `Shorten your url with many providers`,
     author: `@Ripoul & @VictorFAVREAU`,
     siteUrl:`https://url-shortener.ripoul.fr`,
-    icon: `src/images/tailwind-icon.png`
+    icon: `src/images/fav-icon.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -34,7 +34,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
+        icon: `src/images/fav-icon.png`
       }
     },
     `gatsby-plugin-postcss`,

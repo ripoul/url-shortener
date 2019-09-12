@@ -103,7 +103,7 @@ const detailsQuery = graphql`
         icon
       }
     }
-    allFile (filter: {name: {eq:"tailwind-icon"}}){
+    allFile (filter: {name: {eq:"fav-icon"}}){
       edges {
         node{
           publicURL
