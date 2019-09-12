@@ -52,7 +52,7 @@ function SEO ({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `og:url`,
-                content: data.site.siteMetadata.url
+                content: data.site.siteMetadata.siteUrl
               },
               {
                 name: `og:image`,
@@ -98,7 +98,7 @@ const detailsQuery = graphql`
         title
         description
         author
-        url
+        siteUrl
         icon
       }
     }

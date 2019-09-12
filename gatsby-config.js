@@ -20,7 +20,7 @@ module.exports = {
     ],
     description: `Shorten your url with many providers`,
     author: `@Ripoul & @VictorFAVREAU`,
-    url:`https://url-shortener.ripoul.fr`,
+    siteUrl:`https://url-shortener.ripoul.fr`,
     icon: `src/images/tailwind-icon.png`
   },
   plugins: [
@@ -45,6 +45,8 @@ module.exports = {
         purgeOnly: ["src/css/style.css"]
       }
     },
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    'gatsby-plugin-robots-txt',
+    `gatsby-plugin-sitemap`
   ]
 };
