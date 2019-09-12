@@ -19,7 +19,9 @@ module.exports = {
       }
     ],
     description: `Shorten your url with many providers`,
-    author: `@Ripoul & @VictorFAVREAU`
+    author: `@Ripoul & @VictorFAVREAU`,
+    url:`https://url-shortener.ripoul.fr`,
+    icon: `src/images/tailwind-icon.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

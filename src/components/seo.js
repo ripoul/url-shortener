@@ -49,6 +49,14 @@ function SEO ({ description, lang, meta, keywords, title }) {
               {
                 name: `twitter:description`,
                 content: metaDescription
+              },
+              {
+                name: `og:url`,
+                content: data.site.siteMetadata.url
+              },
+              {
+                name: `og:image`,
+                content: data.site.siteMetadata.icon
               }
             ]
               .concat(
@@ -90,6 +98,8 @@ const detailsQuery = graphql`
         title
         description
         author
+        url
+        icon
       }
     }
   }

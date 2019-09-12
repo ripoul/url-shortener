@@ -9,7 +9,7 @@ function Qrcode () {
   return (
     <Layout>
       <SEO
-        title="Home"
+        title="Qrcode shortener"
         keywords = {
           [
             `gatsby`, 
