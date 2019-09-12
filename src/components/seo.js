@@ -40,7 +40,8 @@ function SEO ({ description, lang, meta, keywords, title }) {
               },
               {
                 property: `og:image`,
-                content: data.site.siteMetadata.icon
+                content: data.site.siteMetadata.siteUrl + 
+                  data.allFile.edges[0].node.publicURL
               },
               {
                 name: `twitter:card`,
@@ -100,6 +101,13 @@ const detailsQuery = graphql`
         author
         siteUrl
         icon
+      }
+    }
+    allFile (filter: {name: {eq:"tailwind-icon"}}){
+      edges {
+        node{
+          publicURL
+        }
       }
     }
   }
