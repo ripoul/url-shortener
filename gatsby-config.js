@@ -66,5 +66,11 @@ module.exports = {
         path: `${ __dirname }/src/images/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://url-shortener.ripoul.fr`,
+      },
+    },
   ]
 };
