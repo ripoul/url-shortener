@@ -17,7 +17,9 @@ function IndexPage () {
             `url-shortener`,
             `shorten`,
             `provider`,
-            `ripoul`
+            `ripoul`,
+            `link`,
+            `free`
           ]
         }
       />

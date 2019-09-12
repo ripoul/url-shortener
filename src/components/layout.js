@@ -55,7 +55,7 @@ function Layout ({ children }) {
             <nav className="flex justify-between max-w-4xl mx-auto p-4 md:p-6 text-sm">
               <p className="text-gray-800">
                 Created with {" "}
-                <FontAwesomeIcon icon={faHeart}/>
+                <FontAwesomeIcon className="max-w-xs" icon={faHeart}/>
                 {" "} 
                 by
                 {" "} 
