@@ -47,6 +47,17 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     'gatsby-plugin-robots-txt',
-    `gatsby-plugin-sitemap`
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        // your google analytics tracking id
+        trackingId: `UA-147713561-1`,
+        // Puts tracking script in the head instead of the body
+        head: true,
+        // enable ip anonymization
+        anonymize: true,
+      },
+    },
   ]
 };
