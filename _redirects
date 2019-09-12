@@ -1,0 +1,7 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://www.url-shortener.ripoul.fr/* https://url-shortener.ripoul.fr/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://vigilant-ptolemy-8fe211.netlify.com/* https://url-shortener.ripoul.fr/:splat 301!
