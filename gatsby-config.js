@@ -18,7 +18,7 @@ module.exports = {
         external: true
       }
     ],
-    description: `Choose your provider among many and transform an unreadable url to a beautiful short url. Choose among the most famous url shortener and share your new shortened links.`,
+    description: `Choose your provider among many and transform an unreadable url to a beautiful short url. Choose among the most famous url shortener like bit.ly or other.`,
     author: `@Ripoul & @VictorFAVREAU`,
     siteUrl:`https://url-shortener.ripoul.fr`,
     icon: `src/images/fav-icon.png`
