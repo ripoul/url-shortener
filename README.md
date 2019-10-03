@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.org/ripoul/url-shortener.svg?branch=master)](https://travis-ci.org/ripoul/url-shortener)
 [![CodeFactor](https://www.codefactor.io/repository/github/ripoul/url-shortener/badge)](https://www.codefactor.io/repository/github/ripoul/url-shortener)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=ripoul/url-shortener)](https://dependabot.com)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/db49f1ba-594f-4b19-9024-7584a33195fd/deploy-status)](https://app.netlify.com/sites/vigilant-ptolemy-8fe211/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/db49f1ba-594f-4b19-9024-7584a33195fd/deploy-status)](https://app.netlify.com/sites/url-shortener-ripoul/deploys)
 
 > A secure url shortener allowing you to easily share your links
 
