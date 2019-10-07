@@ -20,7 +20,7 @@
     "gatsby-source-filesystem": "^2.1.26",
     "graphql": "14.5.8",
     "prop-types": "15.7.2",
-    "react": "16.9.0",
+    "react": "16.10.2",
     "react-dom": "16.10.1",
     "react-dropdown-select": "^3.6.3",
     "react-helmet": "5.2.1",
