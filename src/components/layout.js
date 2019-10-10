@@ -73,7 +73,7 @@ function Layout ({ children }) {
                   Victor FAVREAU
                 </a>
               </p>
-              <p className="inline-flex">
+              <span className="inline-flex">
                 <FacebookShareButton url="https://url-shortener.ripoul.fr" className="mx-1">
                   <FacebookIcon
                     size={32}
@@ -99,7 +99,7 @@ function Layout ({ children }) {
                     size={32}
                     round={true} />
                 </EmailShareButton>
-              </p>
+              </span>
             </nav>
           </footer>
         </div>
