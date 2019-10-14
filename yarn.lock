@@ -723,7 +723,7 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.0", "@babel/runtime@^7.6.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2":
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.2.tgz#c3d6e41b304ef10dcf13777a33e7694ec4a9a6dd"
   integrity sha512-EXxN64agfUqqIGeEjI5dL5z0Sw0ZwWo1mLTi4mQowCZ42O59b7DRpZAnTC6OqdF28wMBMFKNb/4uFGrVaigSpg==
@@ -884,10 +884,10 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.25"
 
-"@fortawesome/react-fontawesome@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.1.5.tgz#8bc3cd5c617749534787a35e29caa7a6cff705c9"
-  integrity sha512-WYDKTgyAWOncujWhhzhW7k8sgO5Eo2pZTUL51yNzSQNBUwwr6rNKg/JUSE3iebaU1XShHw74aKc1kJ+jvtRNew==
+"@fortawesome/react-fontawesome@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.1.6.tgz#b798b96401e25d07c30bbe1b9ec0e6d8a33760a5"
+  integrity sha512-DNqt2t4JQ0YQKi832XzByk1wlQzgugwwCCNQHsFyz1z/zA9dtypSvsvVwMIaWXMljalYzKAA2zHX13C1DIxKAw==
   dependencies:
     prop-types "^15.5.10"
 
@@ -4629,7 +4629,7 @@ gatsby-cli@^2.7.45:
     ink "^2.3.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.10, gatsby-core-utils@^1.0.12, gatsby-core-utils@^1.0.7:
+gatsby-core-utils@^1.0.12, gatsby-core-utils@^1.0.7:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.12.tgz#72f38677b9894d701b55f12b0c443a72274ae1c6"
   integrity sha512-Ryh0ILzG6zuYA88irnFQPKGe0NwEBh30FqAp7KNyYgsiOB41CSD0JfjIlFUgkU/gAoLlZKXyeFwbq3SVEBwNoA==
