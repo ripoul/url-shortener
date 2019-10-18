@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 const Header = ({ siteTitle, menuLinks, location }) => {
-  const [menuOpen, toggleMenu] = useState(true)
+  const [menuOpen, toggleMenu] = useState(false)
   const buildLink = link => {
     const commonClass =
       "lg:text-center lg:border block lg:rounded lg:inline-block lg:mt-0 mr-4 py-2 px-4"
@@ -62,10 +62,8 @@ const Header = ({ siteTitle, menuLinks, location }) => {
               </svg>
             </button>
           </div>
-          <div className="w-full block lg:flex lg:items-center lg:w-auto">
-            {menuOpen && (
-              <div className="text-sm">{menuLinks.map(buildLink)}</div>
-            )}
+          <div className={`w-full lg:block lg:flex lg:items-center lg:w-auto ${ menuOpen ? '' : 'hidden' }`}>
+            <div className="text-sm">{menuLinks.map(buildLink)}</div>
           </div>
         </div>
       </nav>
