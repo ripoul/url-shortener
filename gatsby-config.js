@@ -9,7 +9,7 @@ module.exports = {
       },
       {
         name: 'qrcode shortener',
-        link: '/qrcode',
+        link: '/qrcode/',
         external: false
       },
       {
