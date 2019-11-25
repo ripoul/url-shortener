@@ -8783,10 +8783,10 @@ react-dom@16.12.0:
     prop-types "^15.6.2"
     scheduler "^0.18.0"
 
-react-dropdown-select@^3.6.7:
-  version "3.6.7"
-  resolved "https://registry.yarnpkg.com/react-dropdown-select/-/react-dropdown-select-3.6.7.tgz#920d5a908759af09fb037b966630c600a3dccbc0"
-  integrity sha512-/XB/FDjScLI1h5q9sBatPy87chz93Y2XAhUCVvVyxVumrwhIIS+cJjIlbCouo4juKXSTAXHMebHmS7dRmtx7ng==
+react-dropdown-select@^3.6.8:
+  version "3.6.8"
+  resolved "https://registry.yarnpkg.com/react-dropdown-select/-/react-dropdown-select-3.6.8.tgz#2de74bad840b4ecb679d7d99b5661bdf73fdd18e"
+  integrity sha512-mdS9ED1T2N8Kw9nmxnxf7un7YxGdl5RBtufSFwnXajNA50UFzgt3Oui0LhPbSlgEl0keBtFbt3+NRgwpOA/eMg==
   dependencies:
     "@emotion/core" "^10.0.14"
     "@emotion/styled" "^10.0.14"
