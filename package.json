@@ -10,7 +10,7 @@
     "gatsby": "2.15.11",
     "gatsby-plugin-canonical-urls": "^2.1.19",
     "gatsby-plugin-gtag": "^1.0.12",
-    "gatsby-plugin-manifest": "2.2.34",
+    "gatsby-plugin-manifest": "2.2.37",
     "gatsby-plugin-offline": "3.0.32",
     "gatsby-plugin-postcss": "2.1.19",
     "gatsby-plugin-purgecss": "4.0.1",
