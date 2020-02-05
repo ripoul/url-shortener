@@ -16,7 +16,7 @@
     "gatsby-plugin-purgecss": "4.0.1",
     "gatsby-plugin-react-helmet": "3.1.22",
     "gatsby-plugin-robots-txt": "^1.5.0",
-    "gatsby-plugin-sitemap": "^2.2.26",
+    "gatsby-plugin-sitemap": "^2.2.27",
     "gatsby-source-filesystem": "^2.1.48",
     "graphql": "14.5.8",
     "prop-types": "15.7.2",
