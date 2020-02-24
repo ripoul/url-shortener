@@ -4849,10 +4849,10 @@ gatsby-plugin-canonical-urls@^2.1.20:
   dependencies:
     "@babel/runtime" "^7.7.6"
 
-gatsby-plugin-gtag@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-gtag/-/gatsby-plugin-gtag-1.0.12.tgz#a8af141773c2962d0803eaabf33c15caef74829c"
-  integrity sha512-rAOLLlhUfwV4/xi+cX07HYSLDzfHe5oDWu251GDVd8Q2bnrKY5EqyGCTIqkfD3hUu6rBOJr1+1j/IlP5bv/NOw==
+gatsby-plugin-gtag@^1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-gtag/-/gatsby-plugin-gtag-1.0.13.tgz#ffa08a728ba1cfe33090e52764d014a025a5d35a"
+  integrity sha512-Oul6O67klajrEjkkF1diD228SmyUWsAwTq/1tYq41vBwmyNiPk4dhk8K93rrNQ5d5zesSv+awBeGBa503tQqGw==
 
 gatsby-plugin-manifest@2.2.41:
   version "2.2.41"

@@ -9,7 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.1.8",
     "gatsby": "2.15.11",
     "gatsby-plugin-canonical-urls": "^2.1.20",
-    "gatsby-plugin-gtag": "^1.0.12",
+    "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-manifest": "2.2.41",
     "gatsby-plugin-offline": "3.0.32",
     "gatsby-plugin-postcss": "2.1.20",
